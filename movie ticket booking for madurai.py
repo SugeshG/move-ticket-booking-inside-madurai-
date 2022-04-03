@@ -1,7 +1,7 @@
 
 global f
 f = 0 
-#this t_movie function is used to select movie name
+#this movie function is used to select movie name
 def movies():
     global f
     f = f+1
@@ -14,13 +14,12 @@ def movies():
     print("4,back")
     movie = int(input("choose your movie: "))
     if movie == 6:
-      # in this it goes to center function and from center it goes to movie function and it comes back here and then go to theater
       center()
       theater()
       return 0
     if f == 1:
       theater()
-# this theater function used to select screen
+# this function used to select screen
 def theater():
     print("which screen do you want to watch movie: ")
     print("1,SCREEN 1")
@@ -30,7 +29,7 @@ def theater():
     ticket = int(input("number of ticket do you want "))
     timing(a)
  
-# this timing function used to select timing for movie
+# this timing function used to select timing for the movie you want to watch 
 def timing(a):
     time1 = {
         "1": "10.00-1.00",
@@ -98,7 +97,7 @@ def center():
     movie(a)
     return 0
  
-# this function is used to select city
+# this function is used to select reguion inside madurai
 def region():
     print(" welcome to book your tickets ")
     print("choose theatre to watch movie:")
